@@ -4,11 +4,11 @@ const router = new Router();
 import usuarioController from '../controllers/UsuarioController';
 import loguinRequerido from '../middlewares/loginRequerido';
 
+// router.get('/', usuarioController.index);
+// router.get('/:id', usuarioController.show);
 
 router.post('/', usuarioController.store);
-router.get('/', loguinRequerido, usuarioController.index);
-router.get('/:id', usuarioController.show);
-router.put('/:id', usuarioController.update);
-router.delete('/:id', usuarioController.delete);
+router.put('/', loguinRequerido, usuarioController.update);
+router.delete('/', loguinRequerido, usuarioController.delete);
 
 export default router;
