@@ -4,7 +4,7 @@ const router = new Router();
 import usuarioController from '../controllers/UsuarioController';
 import loguinRequerido from '../middlewares/loginRequerido';
 
-router.get('/', usuarioController.index);
+// router.get('/', usuarioController.index);
 // router.get('/:id', usuarioController.show);
 
 router.post('/', usuarioController.store);
