@@ -23,7 +23,7 @@ export default class Usuario extends Model {
           },
           validate: {
             isEmail: {
-              msg: 'Campo email é invalido.'
+              msg: 'Campo email é inválido.'
             }
           }
         },

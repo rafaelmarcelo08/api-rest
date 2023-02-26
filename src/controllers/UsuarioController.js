@@ -32,7 +32,6 @@ class UsuarioController {
 
   async show(req, res) {
     try {
-      console.log(req.params.id);
       const usuario = await Usuario.findByPk(req.params.id);
 
       const { id, nome, email } = usuario;
