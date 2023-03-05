@@ -30,6 +30,6 @@ export default class Foto extends Model {
   }
 
   static associate(models) {
-    this.belongsTo(models.Aluno, { foreignKey: 'aluno_id' })
+    this.belongsTo(models.Aluno, { foreignKey: 'aluno_id' });
   }
 }
